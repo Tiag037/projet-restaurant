@@ -1,0 +1,49 @@
+.section2{
+    background: rgb(54, 43, 43), url(../img/bg-menu-01.jpg);
+    background-position: top, bottom;
+
+    padding: 80px 0 0 0;
+    margin: 0 auto;
+
+
+    h3{
+      color: $color1;
+      font-family: $font1;
+      font-size: 1.8rem;
+      font-weight: 100;
+      margin-bottom: 50px;
+    }
+
+
+    .nav-menu{
+      
+        width: 60%;
+        margin: 50px auto;
+        ul{
+            @include alignChildren(space-around);
+            color: $white1;
+        }
+    }
+    .menu-items{
+        background: $white1;
+        width: 65%;
+        min-height: 400px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .menu-items-block{
+            @include alignChildren(flex-start); 
+            gap: 10px;
+            border-bottom:1px dashed $grey;
+            padding: 10px;
+
+
+            .img-menu{
+                border-radius: 50px;
+            }
+        }
+        
+    }
+
+}

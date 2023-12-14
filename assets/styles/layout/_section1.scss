@@ -1,0 +1,38 @@
+.section1{
+    height: 470px;
+    display: flex;
+    background: rgb(230, 230, 230);
+    .container-left{
+        padding: 10px 10px;
+        width: 50%;
+        margin: 12px;
+        border: 1px dashed $color1;
+        display: grid;
+        align-items: center;
+        font-size: 1.3rem;
+
+        h4{
+            color: $color1;
+            font-family: $font1;
+            font-size: 1.5rem;
+            font-weight: 100;
+        }
+        h5{
+            margin-top: -30px;
+            text-transform: uppercase;
+            font-weight: 900;
+
+        }
+
+        .avatar1{
+            height: 70px ;
+            width: 70px;
+            border-radius: 50px;
+        }
+        
+    }
+    .container-right{
+        width: 50%;
+        background : url(../img/store-01.jpg) center / cover;
+    }
+}
