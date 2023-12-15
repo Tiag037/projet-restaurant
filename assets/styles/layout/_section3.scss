@@ -1,0 +1,78 @@
+.section3 {
+  min-height: 100vh;
+
+  .section3-container {
+    height: 550px;
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+    background: rgb(19, 18, 18);
+
+    .section3-container-left {
+      width: 30%;
+      margin: 20px;
+      border: 1px dashed $white1;
+      padding: 50px 50px 20px;
+
+      h5 {
+        color: $color1;
+        font-family: $font1;
+        font-size: 3rem;
+        font-weight: normal;
+      }
+      .open {
+        color: $white1;
+        margin-top: -16px;
+        font-size: 2.3rem;
+        text-transform: uppercase;
+        font-weight: bolder;
+      }
+      .section3-logo {
+        margin: 30px 0;
+      }
+
+      .open-day-container {
+        .open-day {
+          color: $color1;
+          font-size: 1.2rem;
+          letter-spacing: 2px;
+          line-height: 30px;
+        }
+        p {
+          color: $white1;
+          margin-bottom: 20px;
+        }
+      }
+
+      .open-day-phone {
+        color: $color1;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin: 30px;
+      }
+    }
+    .section3-container-right {
+      background: $white1;
+      width: 70%;
+
+      .container-top {
+        height: 45%;
+        @include childCenter;
+        flex-direction: column;
+
+        h4 {
+          color: $color1;
+          font-family: $font1;
+          font-size: 3rem;
+          font-weight: 100;
+        }
+        h5 {
+          font-size: 2rem;
+          font-weight: bolder;
+          text-transform: uppercase;
+          margin-top: -16px;
+        }
+      }
+    }
+  }
+}

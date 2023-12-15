@@ -165,8 +165,10 @@ header .header-title .container-title p {
 }
 
 .section2 {
-  background: rgb(54, 43, 43), url(../img/bg-menu-01.jpg);
-  background-position: top, bottom;
+  min-height: 150vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0))), bottom url(../img/bg-menu-01.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0)), bottom url(../img/bg-menu-01.jpg) no-repeat;
+  background-size: 100% 50%;
   padding: 80px 0 0 0;
   margin: 0 auto;
 }
@@ -178,7 +180,7 @@ header .header-title .container-title p {
   margin-bottom: 50px;
 }
 .section2 .nav-menu {
-  width: 60%;
+  width: 55%;
   margin: 50px auto;
 }
 .section2 .nav-menu ul {
@@ -194,26 +196,125 @@ header .header-title .container-title p {
 }
 .section2 .menu-items {
   background: #eee;
-  width: 65%;
-  min-height: 400px;
+  width: 60%;
+  min-height: 600px;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 0 10px;
+  gap: 20px;
 }
 .section2 .menu-items .menu-items-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 10px;
-  border-bottom: 1px dashed rgb(182, 182, 182);
+  gap: 15px;
   padding: 10px;
+  border-bottom: 1px dashed;
 }
 .section2 .menu-items .menu-items-block .img-menu {
   border-radius: 50px;
+}
+.section2 .menu-items .menu-items-block .description {
+  text-align: start;
+  line-height: 25px;
+}
+.section2 .menu-items .menu-items-block .description h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: Roboto, serif;
+}
+.section2 .menu-items .menu-items-block .description p {
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+.section2 .menu-items .menu-items-block .price {
+  color: rgb(166, 114, 69);
+  font-weight: bolder;
+}
+
+.section3 {
+  min-height: 100vh;
+}
+.section3 .section3-container {
+  height: 550px;
+  width: 80%;
+  margin: 100px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgb(19, 18, 18);
+}
+.section3 .section3-container .section3-container-left {
+  width: 30%;
+  margin: 20px;
+  border: 1px dashed #eee;
+  padding: 50px 50px 20px;
+}
+.section3 .section3-container .section3-container-left h5 {
+  color: rgb(166, 114, 69);
+  font-family: Allura, cursive;
+  font-size: 3rem;
+  font-weight: normal;
+}
+.section3 .section3-container .section3-container-left .open {
+  color: #eee;
+  margin-top: -16px;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+.section3 .section3-container .section3-container-left .section3-logo {
+  margin: 30px 0;
+}
+.section3 .section3-container .section3-container-left .open-day-container .open-day {
+  color: rgb(166, 114, 69);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+.section3 .section3-container .section3-container-left .open-day-container p {
+  color: #eee;
+  margin-bottom: 20px;
+}
+.section3 .section3-container .section3-container-left .open-day-phone {
+  color: rgb(166, 114, 69);
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin: 30px;
+}
+.section3 .section3-container .section3-container-right {
+  background: #eee;
+  width: 70%;
+}
+.section3 .section3-container .section3-container-right .container-top {
+  height: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.section3 .section3-container .section3-container-right .container-top h4 {
+  color: rgb(166, 114, 69);
+  font-family: Allura, cursive;
+  font-size: 3rem;
+  font-weight: 100;
+}
+.section3 .section3-container .section3-container-right .container-top h5 {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-top: -16px;
 }/*# sourceMappingURL=style.css.map */
