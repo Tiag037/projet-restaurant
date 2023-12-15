@@ -1,0 +1,26 @@
+.section5 {
+  margin-top: 50px;
+  min-height: 90vh;
+
+  .discour {
+    width: 70%;
+    height: 350px;
+    background: $white1;
+    margin: auto;
+    position: relative;
+    @include childCenter;
+    padding: 60px;
+    img {
+      width: 90px;
+      border-radius: 50px;
+      position: absolute;
+      top: -50px;
+    }
+    p {
+      word-spacing: 2px;
+      line-height: 2rem;
+      font-weight: 500;
+      color: $black;
+    }
+  }
+}

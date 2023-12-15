@@ -1,0 +1,192 @@
+.section4 {
+  height: 100vh;
+  h4 {
+    color: $color1;
+    font-size: 1.8rem;
+    font-family: $font1;
+    font-weight: 100;
+  }
+  h5 {
+    color: $white1;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: $font2;
+    letter-spacing: 2px;
+    margin-top: -13px;
+  }
+  .section4-logo {
+    margin: 40px 0 30px;
+  }
+  .container {
+    width: 70%;
+    max-height: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "top top top right right"
+      "bottom bottom bottom right right";
+    gap: 20px;
+
+    .container-top {
+      grid-area: top;
+      display: flex;
+      height: 200px;
+      width: 100%;
+
+      .container-top-img {
+        width: 33%;
+        background: url("../img/event-01.jpg") center / cover;
+        @include childCenter;
+        .container-top-date {
+          width: 90px;
+          height: 90px;
+          background: #21201e;
+          color: $white1;
+          @include alignChildren(center);
+          flex-direction: column;
+          line-height: 10px;
+          strong {
+            font-weight: bolder;
+            font-size: 1.7rem;
+          }
+        }
+      }
+
+      .container-top-description {
+        width: 66%;
+        background: $white1;
+        @include alignChildren(space-evenly);
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 20px;
+
+        h6 {
+          font-size: 1.8rem;
+          font-weight: 200;
+          color: $black;
+          padding-left: 30px;
+        }
+        .hours {
+          color: $grey;
+          word-spacing: 5px;
+          letter-spacing: 1px;
+          font-weight: 500;
+        }
+        .buy-ticket {
+          font-size: 1.1rem;
+
+          font-weight: 600;
+          color: $black;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .container-bottom {
+      grid-area: bottom;
+      display: flex;
+      height: 200px;
+      width: 100%;
+      .container-bottom-img {
+        width: 33%;
+        background: url("../img/event-02.jpg") center / cover;
+        @include childCenter;
+        .container-bottom-date {
+          width: 90px;
+          height: 90px;
+          background: #21201e;
+          color: $white1;
+          @include alignChildren(center);
+          flex-direction: column;
+          line-height: 10px;
+          strong {
+            font-weight: bolder;
+            font-size: 1.7rem;
+          }
+        }
+      }
+      .container-bottom-description {
+        width: 66%;
+        background: $white1;
+        @include alignChildren(space-evenly);
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 20px;
+        h6 {
+          font-size: 1.8rem;
+          font-weight: 200;
+          color: $black;
+          padding-left: 30px;
+        }
+        .hours {
+          color: $grey;
+          word-spacing: 5px;
+          letter-spacing: 1px;
+          font-weight: 500;
+        }
+        .buy-ticket {
+          font-size: 1.1rem;
+
+          font-weight: 600;
+          color: $black;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .container-right {
+      grid-area: right;
+      height: 400px;
+      width: 100%;
+
+      background: url("../img/event-03.jpg") center / cover;
+      @include childCenter;
+      .container-right-img {
+        width: 88%;
+        height: 88%;
+        background: $white1;
+
+        .container-right-date {
+          width: 90px;
+          height: 90px;
+          background: #21201e;
+          margin: 0 auto;
+          color: $white1;
+          @include alignChildren(center);
+          flex-direction: column;
+          line-height: 10px;
+          margin-bottom: 50px;
+          strong {
+            font-weight: bolder;
+            font-size: 1.7rem;
+          }
+        }
+        .container-right-description{
+            @include alignChildren(space-between);
+            flex-direction: column;
+            height: 50%;
+            h6 {
+                font-size: 1.8rem;
+                font-weight: 200;
+                color: $black;
+                padding-left: 30px;
+              }
+              .hours {
+                color: $grey;
+                word-spacing: 5px;
+                letter-spacing: 1px;
+                font-weight: 500;
+              }
+              .buy-ticket {
+                font-size: 1.1rem;
+      
+                font-weight: 600;
+                color: $black;
+                text-transform: uppercase;
+              }
+        }
+      }
+    }
+  }
+}

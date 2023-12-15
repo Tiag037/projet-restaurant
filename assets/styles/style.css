@@ -29,7 +29,7 @@ li {
 }
 
 header {
-  background: url(../img/bg-slider-06.jpg) center/cover;
+  background: url("../img/bg-slider-06.jpg") center/cover;
   color: #eee;
   padding: 0 50px;
 }
@@ -161,13 +161,13 @@ header .header-title .container-title p {
 }
 .section1 .container-right {
   width: 50%;
-  background: url(../img/store-01.jpg) center/cover;
+  background: url("../img/store-01.jpg") center/cover;
 }
 
 .section2 {
   min-height: 150vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0))), bottom url(../img/bg-menu-01.jpg) no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0)), bottom url(../img/bg-menu-01.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0))), bottom url("../img/bg-menu-01.jpg") no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0)), bottom url("../img/bg-menu-01.jpg") no-repeat;
   background-size: 100% 50%;
   padding: 80px 0 0 0;
   margin: 0 auto;
@@ -252,7 +252,7 @@ header .header-title .container-title p {
   width: 30%;
   margin: 20px;
   border: 1px dashed #eee;
-  padding: 50px 50px 20px;
+  padding: 20px 50px 0px;
 }
 .section3 .section3-container .section3-container-left h5 {
   color: rgb(166, 114, 69);
@@ -284,7 +284,7 @@ header .header-title .container-title p {
   color: rgb(166, 114, 69);
   font-size: 1.4rem;
   font-weight: bold;
-  margin: 30px;
+  margin: 50px 0 20px;
 }
 .section3 .section3-container .section3-container-right {
   background: #eee;
@@ -317,4 +317,356 @@ header .header-title .container-title p {
   font-weight: bolder;
   text-transform: uppercase;
   margin-top: -16px;
+}
+.section3 .section3-container .section3-container-right .container-top .section3-logo {
+  margin-top: 30px;
+}
+.section3 .section3-container .section3-container-right .container-bottom {
+  height: 55%;
+  padding: 20px 50px;
+}
+.section3 .section3-container .section3-container-right .container-bottom .form-top,
+.section3 .section3-container .section3-container-right .container-bottom .form-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 40px;
+}
+.section3 .section3-container .section3-container-right .container-bottom .form-top input,
+.section3 .section3-container .section3-container-right .container-bottom .form-top select,
+.section3 .section3-container .section3-container-right .container-bottom .form-bottom input,
+.section3 .section3-container .section3-container-right .container-bottom .form-bottom select {
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(182, 182, 182);
+  width: 80%;
+  background: #eee;
+}
+.section3 .section3-container .section3-container-right .container-bottom .form-top input:focus,
+.section3 .section3-container .section3-container-right .container-bottom .form-top select:focus,
+.section3 .section3-container .section3-container-right .container-bottom .form-bottom input:focus,
+.section3 .section3-container .section3-container-right .container-bottom .form-bottom select:focus {
+  outline: none;
+}
+.section3 .section3-container .section3-container-right .container-bottom button {
+  background: #21201e;
+  color: #eee;
+  padding: 17px 50px;
+  border-radius: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.section4 {
+  height: 100vh;
+}
+.section4 h4 {
+  color: rgb(166, 114, 69);
+  font-size: 1.8rem;
+  font-family: Allura, cursive;
+  font-weight: 100;
+}
+.section4 h5 {
+  color: #eee;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: Poppins, serif;
+  letter-spacing: 2px;
+  margin-top: -13px;
+}
+.section4 .section4-logo {
+  margin: 40px 0 30px;
+}
+.section4 .container {
+  width: 70%;
+  max-height: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "top top top right right" "bottom bottom bottom right right";
+  gap: 20px;
+}
+.section4 .container .container-top {
+  grid-area: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  width: 100%;
+}
+.section4 .container .container-top .container-top-img {
+  width: 33%;
+  background: url("../img/event-01.jpg") center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section4 .container .container-top .container-top-img .container-top-date {
+  width: 90px;
+  height: 90px;
+  background: #21201e;
+  color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 10px;
+}
+.section4 .container .container-top .container-top-img .container-top-date strong {
+  font-weight: bolder;
+  font-size: 1.7rem;
+}
+.section4 .container .container-top .container-top-description {
+  width: 66%;
+  background: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+.section4 .container .container-top .container-top-description h6 {
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: #21201e;
+  padding-left: 30px;
+}
+.section4 .container .container-top .container-top-description .hours {
+  color: rgb(182, 182, 182);
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.section4 .container .container-top .container-top-description .buy-ticket {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #21201e;
+  text-transform: uppercase;
+}
+.section4 .container .container-bottom {
+  grid-area: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  width: 100%;
+}
+.section4 .container .container-bottom .container-bottom-img {
+  width: 33%;
+  background: url("../img/event-02.jpg") center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section4 .container .container-bottom .container-bottom-img .container-bottom-date {
+  width: 90px;
+  height: 90px;
+  background: #21201e;
+  color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 10px;
+}
+.section4 .container .container-bottom .container-bottom-img .container-bottom-date strong {
+  font-weight: bolder;
+  font-size: 1.7rem;
+}
+.section4 .container .container-bottom .container-bottom-description {
+  width: 66%;
+  background: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+.section4 .container .container-bottom .container-bottom-description h6 {
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: #21201e;
+  padding-left: 30px;
+}
+.section4 .container .container-bottom .container-bottom-description .hours {
+  color: rgb(182, 182, 182);
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.section4 .container .container-bottom .container-bottom-description .buy-ticket {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #21201e;
+  text-transform: uppercase;
+}
+.section4 .container .container-right {
+  grid-area: right;
+  height: 400px;
+  width: 100%;
+  background: url("../img/event-03.jpg") center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.section4 .container .container-right .container-right-img {
+  width: 88%;
+  height: 88%;
+  background: #eee;
+}
+.section4 .container .container-right .container-right-img .container-right-date {
+  width: 90px;
+  height: 90px;
+  background: #21201e;
+  margin: 0 auto;
+  color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 10px;
+  margin-bottom: 50px;
+}
+.section4 .container .container-right .container-right-img .container-right-date strong {
+  font-weight: bolder;
+  font-size: 1.7rem;
+}
+.section4 .container .container-right .container-right-img .container-right-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50%;
+}
+.section4 .container .container-right .container-right-img .container-right-description h6 {
+  font-size: 1.8rem;
+  font-weight: 200;
+  color: #21201e;
+  padding-left: 30px;
+}
+.section4 .container .container-right .container-right-img .container-right-description .hours {
+  color: rgb(182, 182, 182);
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.section4 .container .container-right .container-right-img .container-right-description .buy-ticket {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #21201e;
+  text-transform: uppercase;
+}
+
+.section5 {
+  margin-top: 50px;
+  min-height: 90vh;
+}
+.section5 .discour {
+  width: 70%;
+  height: 350px;
+  background: #eee;
+  margin: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 60px;
+}
+.section5 .discour img {
+  width: 90px;
+  border-radius: 50px;
+  position: absolute;
+  top: -50px;
+}
+.section5 .discour p {
+  word-spacing: 2px;
+  line-height: 2rem;
+  font-weight: 500;
+  color: #21201e;
 }/*# sourceMappingURL=style.css.map */

@@ -12,7 +12,7 @@
       width: 30%;
       margin: 20px;
       border: 1px dashed $white1;
-      padding: 50px 50px 20px;
+      padding: 20px 50px 0px;
 
       h5 {
         color: $color1;
@@ -48,7 +48,7 @@
         color: $color1;
         font-size: 1.4rem;
         font-weight: bold;
-        margin: 30px;
+        margin: 50px 0 20px;
       }
     }
     .section3-container-right {
@@ -71,6 +71,42 @@
           font-weight: bolder;
           text-transform: uppercase;
           margin-top: -16px;
+        }
+        .section3-logo {
+          margin-top: 30px;
+        }
+      }
+      .container-bottom {
+        height: 55%;
+        padding: 20px 50px;
+
+        .form-top,
+        .form-bottom {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          margin-bottom: 40px;
+          
+          input,
+          select {
+            padding-bottom: 10px;
+            border: none;
+            border-bottom: 1px solid $grey;
+            width: 80%;
+            background: $white1;
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+        button{
+          background: $black;
+          color: $white1;
+          padding: 17px 50px;
+          border-radius: 26px ;
+          text-transform: uppercase;
+          font-weight: bold;
+          letter-spacing: 3px;
         }
       }
     }
