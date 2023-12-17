@@ -1,6 +1,14 @@
 .section5 {
-  margin-top: 50px;
-  min-height: 90vh;
+  
+    margin-top: 50px;
+    min-height: 90vh;
+    background: linear-gradient(#00000000 70%), url("../img/gmap.jpg") bottom;
+    background-repeat: no-repeat;
+    background-position: center 0%; /* Ajustez la valeur en pourcentage pour la position verticale */
+  
+  
+  
+
 
   .discour {
     width: 70%;
@@ -8,7 +16,9 @@
     background: $white1;
     margin: auto;
     position: relative;
-    @include childCenter;
+    @include alignChildren(space-evenly);
+    flex-direction: column;
+    gap: 20px;
     padding: 60px;
     img {
       width: 90px;
@@ -21,6 +31,22 @@
       line-height: 2rem;
       font-weight: 500;
       color: $black;
+    }
+    div{
+        padding-top: 40px;
+        
+        .name{
+          font-weight: 600;
+          font-family: $font3;
+          letter-spacing: 1px;
+          font-size: 1.2rem;
+          
+
+        }
+        .chef{
+          color: $color1;
+        }
+
     }
   }
 }
